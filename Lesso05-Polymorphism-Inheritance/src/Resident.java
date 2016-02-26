@@ -14,8 +14,14 @@ public class Resident extends Person {
     
     
     public String getAddress(){
-    	return this._address.toString();
+    	try {
+			return this._address.toString();
+		} catch (Exception e) {
+			return "Error: Address Not Initialized";
+		}
+    	
     }
+    
     
     //Setter for Address
     public void setAddress(String streetNumber, String streetName, String cityName, String provinceName){

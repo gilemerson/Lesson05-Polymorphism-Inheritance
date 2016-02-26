@@ -77,15 +77,15 @@ Person(String name, int age, int heightInInches, float _massInPounds){
 
 //Public Methods
 public void eats(){
-	System.out.println(this._name + "is eating");
+	System.out.println(this._name + " is eating");
 }
 
 public void walks(){
-	System.out.println(this._name + "is walking");
+	System.out.println(this._name + " is walking");
 }
 
 public void speaks(){
-	System.out.println(this._name + "is speakig");//Concatenate this._name + "is speaking"
+	System.out.println(this._name + " is speakig");//Concatenate this._name + "is speaking"
 }
 
 

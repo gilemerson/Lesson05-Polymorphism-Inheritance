@@ -18,9 +18,10 @@ public class Address {
 	@Override
 	public String toString(){
 		String output = "";
+		System.out.println();
 		output += "Address: \n";
 		output += "-------------------------------- \n";	
-		output += this._streetNumber + "" + this._streetName + "\n";
+		output += this._streetNumber + " " + this._streetName + "  \n";
 		output += this._cityName +", " + this._provinceName + "\n";
 		return output;		
 	}
