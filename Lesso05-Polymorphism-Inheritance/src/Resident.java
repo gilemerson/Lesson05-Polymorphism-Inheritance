@@ -3,13 +3,22 @@
 public class Resident extends Person {
 
 	//Private Instance Variables
-	private String _SIN;
-    private Address _address;
-	
-    
+	protected String _SIN;
+    protected Address _address;
+	   
     //Getters & Setters
     public String getSIN(){
     	return this._SIN;
+    }
+    
+    
+    //Setter for Address
+    public void setAddress(String streetNumber, String streetName, String cityName, String provinceName){
+    	this._address = new Address(streetNumber, streetName, cityName, provinceName);
+    }
+    
+    public void changeAddress(String streetNumber, String streetName, String cityName, String provinceName){
+    	this._address.Change(streetNumber, streetName, cityName, provinceName);//change address
     }
     
     
@@ -20,12 +29,6 @@ public class Resident extends Person {
 			return "Error: Address Not Initialized";
 		}
     	
-    }
-    
-    
-    //Setter for Address
-    public void setAddress(String streetNumber, String streetName, String cityName, String provinceName){
-    	this._address = new Address(streetNumber, streetName, cityName, provinceName);
     }
     
     
