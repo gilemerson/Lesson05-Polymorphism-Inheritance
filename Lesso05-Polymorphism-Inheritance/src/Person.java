@@ -8,7 +8,68 @@ private float _heightInInches;
 private float _massInPounds;
 
 
-//Constructor - 
+
+//Getters/Accessor's  & Setters/Mutators 
+
+/**
+ * @return the _age
+ */
+public int getAge() {
+	return this._age;
+}
+
+/**
+ * @param _age the _age to set
+ */
+public void setAge(int age) {
+	this._age = age;
+}
+
+/**
+ * @return the _name
+ */
+public String getName() {
+	return this._name;
+}
+
+/**
+ * @param _name the _name to set
+ */
+public void setName(String name) {
+	this._name = name;
+}
+
+/**
+ * @return the _heightInInches
+ */
+public float getHeightInInches() {
+	return this._heightInInches;
+}
+
+/**
+ * @param _heightInInches the _heightInInches to set
+ */
+public void setHeightInInches(float heightInInches) {
+	this._heightInInches = heightInInches;
+}
+
+/**
+ * @return the _massInPounds
+ */
+public float getMassInPounds() {
+	return this._massInPounds;
+}
+
+/**
+ * @param _massInPounds the _massInPounds to set
+ */
+public void setMassInPounds(float massInPounds) {
+	this._massInPounds = massInPounds;
+}
+
+
+
+//-- Constructor -- 
 Person(String name, int age, int heightInInches, float _massInPounds){
 	this._name = name;
 	this._age = age;
