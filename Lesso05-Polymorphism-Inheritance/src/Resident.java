@@ -1,6 +1,6 @@
 //Resident SubClass of Person SuperClass
 
-public class Resident extends Person {
+public abstract class Resident extends Person {
 
 	//Private Instance Variables
 	protected String _SIN;

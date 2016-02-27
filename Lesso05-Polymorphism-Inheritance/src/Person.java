@@ -1,7 +1,7 @@
 //Super Class We Are Going To Use
 //Person Class
 
-public class Person {
+public abstract class Person {
 protected int _age;
 protected String _name;
 protected float _heightInInches;

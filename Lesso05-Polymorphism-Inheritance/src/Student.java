@@ -3,9 +3,10 @@ import java.util.ArrayList;
 //Student Class
 
 //Student class is composition of courses class 
-public class Student extends Resident {
+public class Student extends Resident implements SchoolID {
 	//Private Instance Variables
 	private String _studentID;
+	private String _schoolID;
 	//Course Array List 
 	private ArrayList<Course> _courses = new ArrayList<Course>();
 	
@@ -41,6 +42,7 @@ public class Student extends Resident {
 	
 	@Override
 	public String toString() {
+		System.out.println(this._schoolID);
 		String output = "";
 		output+= "StudentName: " + this._name + " StudentID: " + this._studentID + "\n";
 		//Check to see if a course is entered
@@ -54,5 +56,12 @@ public class Student extends Resident {
 		output += "----------------------------------\n";				
 	}
 		return output;
-  }		
+  }
+
+	@Override
+	public void addSchool(String schoolName) {
+		this._schoolID = schoolName;		
+	}
+
+		
 }
